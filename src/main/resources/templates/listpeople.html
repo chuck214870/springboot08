@@ -17,8 +17,8 @@
     <tr th:each="person : ${people}">
         <td th:text="${person.firstName}"></td>
         <td th:text="${person.lastName}"></td>
-        <td th:inline="text"><a th:href="@{/detail/{id}(id =${person.id})}">view</a>
-            <a th:href="@{/delete/{id}(id=${persion.id})}"></a>
+        <td th:inline="text"><a th:href="@{/detail/{id}(id =${person.id})}">View Details</a>
+            <a th:href="@{/delete/{id}(id=${person.id})}">Delete This Person</a>
         </td>
     </tr>
 
